@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94CCD3"
+    tools:context=".Registro1_activity">
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FD0303"
+        app:layout_constraintStart_toStartOf="@+id/etNombre2"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre2" />
+
+    <TextView
+        android:id="@+id/TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="FORMULARIO DE CONTACTO"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Nombre (Obligatorio)"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV" />
+
+    <EditText
+        android:id="@+id/etApellidos"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Apellidos (Obligatorio)"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/etNombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNombre"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Email (Obligatorio)"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/etApellidos"
+        app:layout_constraintStart_toStartOf="@+id/etApellidos"
+        app:layout_constraintTop_toBottomOf="@+id/etApellidos" />
+
+    <EditText
+        android:id="@+id/etEdad"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Año de nacimiento"
+        android:inputType="number|text|phone"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/etCorreo"
+        app:layout_constraintStart_toStartOf="@+id/etCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/etCorreo" />
+
+    <EditText
+        android:id="@+id/etTerapia"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#f2bd96"
+        android:ems="10"
+        android:hint="¿Cual es el motivo de la terapia?"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/etEdad"
+        app:layout_constraintStart_toStartOf="@+id/etEdad"
+        app:layout_constraintTop_toBottomOf="@+id/etEdad" />
+
+    <EditText
+        android:id="@+id/etNombre2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/etTerapia"
+        app:layout_constraintTop_toBottomOf="@+id/etTerapia" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre2"
+        app:srcCompat="@drawable/logoblue" />
+
+    <Button
+        android:id="@+id/bContinuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#FF424242"
+        android:text="Continuar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#FD0303"
+        app:layout_constraintStart_toStartOf="@+id/etNombre"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+    <TextView
+        android:id="@+id/tvNombre4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etApellidos"
+        tools:layout_editor_absoluteX="106dp" />
+
+    <TextView
+        android:id="@+id/tvApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#FD0303"
+        app:layout_constraintStart_toStartOf="@+id/etApellidos"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FD0303"
+        app:layout_constraintStart_toStartOf="@+id/etCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/etCorreo" />
+
+    <TextView
+        android:id="@+id/tvEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FD0303"
+        app:layout_constraintStart_toStartOf="@+id/etEdad"
+        app:layout_constraintTop_toBottomOf="@+id/etEdad" />
+
+    <TextView
+        android:id="@+id/tvTerapia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FD0303"
+        app:layout_constraintStart_toStartOf="@+id/etTerapia"
+        app:layout_constraintTop_toBottomOf="@+id/etTerapia" />
+
+</android.support.constraint.ConstraintLayout>
