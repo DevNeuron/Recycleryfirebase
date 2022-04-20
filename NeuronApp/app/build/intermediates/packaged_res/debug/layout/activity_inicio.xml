@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94CCD3"
+    tools:context=".Inicio">
+
+    <Button
+        android:id="@+id/bRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#3E3838"
+        android:text="Registrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bInicio" />
+
+    <Button
+        android:id="@+id/bInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#3E3838"
+        android:text="Iniciar Sesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintStart_toStartOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Introduce la Contraseña"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUser" />
+
+    <TextView
+        android:id="@+id/tvUser2"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintStart_toStartOf="@+id/etUser"
+        app:layout_constraintTop_toBottomOf="@+id/etUser" />
+
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:autoText="false"
+        android:ems="10"
+        android:hint="Introduce tu usuario"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBienvenido" />
+
+    <TextView
+        android:id="@+id/tvBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Bienvenidos a Fundación Neuron"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
