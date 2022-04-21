@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".loginPedirCita"
+            android:exported="false" />
+        <activity
+            android:name=".Registro3"
+            android:exported="false" />
+        <activity
+            android:name=".Registro2"
+            android:exported="false" />
+        <activity
             android:name=".MiZona"
             android:exported="false" />
         <activity

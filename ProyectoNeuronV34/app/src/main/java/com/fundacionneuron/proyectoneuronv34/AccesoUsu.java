@@ -32,7 +32,7 @@ public class AccesoUsu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(AccesoUsu.this, PedirCita.class);
+                Intent intent = new Intent(AccesoUsu.this,loginPedirCita.class);
                 startActivity(intent);
             }
         });
@@ -41,7 +41,7 @@ public class AccesoUsu extends AppCompatActivity {
         ibZona.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AccesoUsu.this, MiZona.class);
+                Intent intent = new Intent(AccesoUsu.this, LoginMizona.class);
                 startActivity(intent);
             }
         });

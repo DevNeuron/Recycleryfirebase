@@ -25,13 +25,13 @@ public class Acceso extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        /*ImageButton ibPersonal =(ImageButton) findViewById(R.id.ibPersonal);
+        ImageButton ibPersonal =(ImageButton) findViewById(R.id.ibPersonal);
         ibPersonal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
             Intent i = new Intent(Acceso.this,AccesoPers.class);
             startActivity(i);
             }
-        });*/
+        });
     }
 }
